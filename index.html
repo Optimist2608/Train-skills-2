@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abito</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./media.css" />
+</head>
+
+<body>
+  <header class="head container">
+    <div class="logo">
+      <picture class="abito">
+        <!-- просто img не правильно ииспользовать надо вот так я считаю делать через pic -->
+        <source srcset="./img/logo.avif" type="image/avif" />
+        <source srcset="./img/logo.webp" type="image/webp" />
+        <img class="abito_pic" src="./img/logo.png" alt="abito" />
+      </picture>
+      <p class="logo_title">Abito</p>
+    </div>
+    <nav class="nav_head">
+      <a class="a_head" id="a_head1" href="#">Вход и регистрация</a>
+      <button class="a_head a_head2">Подать объявление</button>
+      <svg class="burger" viewBox="0 0 30 30">
+        <!-- Оптимизировал свг тк так правильнее его использовать через сайт https://svgomg.net/ -->
+        <path fill="none" d="M0 0h30v30H0z" />
+        <g fill="#000">
+          <path
+            d="M29.062 14.063H.937a.938.938 0 0 0 0 1.874h28.125a.938.938 0 0 0 0-1.874ZM29.063 20.625h-18.75a.938.938 0 0 0 0 1.875h18.75a.938.938 0 0 0 0-1.875ZM.937 9.375h28.125a.938.938 0 0 0 0-1.875H.937a.938.938 0 0 0 0 1.875Z" />
+        </g>
+      </svg>
+    </nav>
+  </header>
+  <main class="main container">
+    <section class="search container">
+      <div class="search_box">
+        <input type="text" placeholder="Поиск по объявлениям" />
+        <button class="a_head2 search_btn">
+          <picture class="search_pic">
+            <source srcset="./img/search.avif" type="image/avif" />
+            <source srcset="./img/search.webp" type="image/webp" />
+            <img class="search_img" src="./img/search.png" alt="search" />
+          </picture>
+          <span class="hid_b">Найти</span>
+        </button>
+      </div>
+    </section>
+    <section class="alert container">
+      <div class="left_alert">
+        <h2 class="alert_title logo_title">Электросамокат kugoo Gx</h2>
+        <picture class="kugo">
+          <source srcset="./img/kugo.avif" type="image/avif">
+          <source srcset="./img/kugo.webp" type="image/webp">
+          <img class="kugo_pic" src="./img/kugo.png" alt="kugo">
+        </picture>
+        <p class="alert_text">
+          Продаю не спеша самокат в хорошем состоянии. <br>
+          Торг возможен. <br>
+          За период эксплуатации не выявлено ни одной проблемы. <br>
+          Из минусов — нужно прокачать задний тормоз. <br>
+          Установлен отсекатель сзади. <br>
+          Покрышки CST внедорожные. <br>
+          Все на подшипниках, болты протянуты. <br>
+          Пробег 881км , это немного для такого зверя. <br>
+        </p>
+      </div>
+      <div class="midle_alert">
+        <h2 class="alert_title logo_title">75 000 ₽</h2>
+        <button class="a_head2 contact_btn">Показать телефон</button>
+      </div>
+      <div class="right_alert">
+        <h2 class="alert_title logo_title">Сервисы и услуги</h2>
+        <aside class="aside ">
+          <div class="info">
+            <picture>
+              <source srcset="./img/truck.avif" type="image/avif">
+              <source srcset="./img/truck.webp" type="image/webp">
+              <img src="./img/truck.png" alt="truck">
+            </picture>
+            <h2 class="info_title">Доставка</h2>
+            <p class="info_text">Проверка при получении и возможность бесплатно вернуть товар</p>
+          </div>
+          <div class="info">
+            <picture>
+              <source srcset="./img/sedan.avif" type="image/avif">
+              <source srcset="./img/sedan.webp" type="image/webp">
+              <img src="./img/sedan.png" alt="sedan">
+            </picture>
+            <h2 class="info_title">Автотека</h2>
+            <p class="info_text">Отчёт с историей авто: пробег, владельцы, сведения о залоге, ДТП и ремонтах</p>
+          </div>
+          <div class="info">
+            <picture>
+              <source srcset="./img/home.avif" type="image/avif">
+              <source srcset="./img/home.webp" type="image/webp">
+              <img src="./img/home.png" alt="home">
+            </picture>
+            <h2 class="info_title">Онлайн-бронирование жилья</h2>
+            <p class="info_text">Посуточная аренда квартир и домов: большой выбор вариантов для поездок по России</p>
+          </div>
+          <hr>
+          <div class="copyright">
+            <p class="mini">© ООО «Абито», 2011–2021</p>
+            <p class="mini mini_dec">Политика конфиденциальности</p>
+            <p class="mini mini_dec">Обработка данных</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>

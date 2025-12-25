@@ -1,0 +1,44 @@
+@media (max-width:1200px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (max-width:920px) {
+    .alert {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .aside {
+        width: 100%;
+        justify-content: center;
+    }
+    hr {
+        margin-bottom: 65.5px;
+    }
+    .copyright {
+        margin-bottom: 21px;
+    }
+    
+}
+@media (max-width:800px) {
+    .container {
+        margin-right: 25px; /* Не стал клампами делать просто на интерес а так клампами получше будет я думаю */
+        margin-left: 25px;
+    }
+    .kugo_pic {
+        width: 269px;
+    }
+    #a_head1,
+    .a_head2,
+    .hid_b{
+        display: none;
+    }
+    .search_btn, .contact_btn {
+        display: inline-block;
+    }
+    .burger {
+        display: inline-block;
+    }
+}
